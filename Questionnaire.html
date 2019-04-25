@@ -1,0 +1,22 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>redirect</title>
+</head>
+
+<body>
+<script>
+var urls = ['https://docs.google.com/forms/d/e/1FAIpQLSflCON1OppCzgEynj7pKNYO8GOeb2RN7cVmz4at7kmOV6JozQ/viewform','https://docs.google.com/forms/d/e/1FAIpQLSfIAD9F_JjJ96iGIUIEbGG2SLCU0bbywafmTuv4GqHsp0dT5w/viewform','https://docs.google.com/forms/d/e/1FAIpQLSf29e7siJSJwScxVphZ53oUaYrruXnCXUpnoc_yJKHg5N1r7A/viewform'];
+
+var min = 0;
+var max = urls.length - 1;
+if(max==0){
+ window.location.href='https://www.google.com.tw';
+ }
+else{
+ var random = Math.floor(Math.random() * (max - min + 1)) + min;
+ window.location.href=urls[random];
+ }
+</script>
+</body>
+</html>
