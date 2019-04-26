@@ -17,14 +17,11 @@ var urls = ['https://docs.google.com/forms/d/1BEcHt22E3hQoi755VTY6tYYOR6tXhzBULu
 
 var min = 0;
 var max = urls.length - 1;
-if(max==0){
- window.location.href='https://www.google.com.tw';
- }
-else{
-  var random = Math.floor(Math.random() * (max - min + 1)) + min;
-  console.log(random);
-  window.location.href=urls[random];
- }
+var random = Math.floor(Math.random() * (max - min + 1)) + min;
+console.log(random);
+window.location.href=urls[random];
+  
+ 
 </script>
 </body>
 </html>
